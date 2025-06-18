@@ -12,7 +12,7 @@ const RightSection = ({
   buttonText = "Try Demo",
 }) => {
   return (
-    <section className="py-5 bg-light">
+    <section className="py-5 bg-light  px-3 px-md-5">
       <div className="container">
         <div className="row align-items-center g-4 flex-column flex-md-row">
           {/* Text Section */}
