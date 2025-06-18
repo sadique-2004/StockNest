@@ -4,7 +4,8 @@ const Signup = () => {
   return (
     <div className="container mt-5 px-4 mb-5">
       <div className="text-center mb-5">
-        <h1 className="fw-bold display-6 text-muted">Open a free demat & trading account</h1>
+        <h1 className="fw-bold display-6 " style={{ color: "#3B7CD3" }}>Open a free demat & trading account</h1>
+        
         <p className="lead text-muted">
           Start investing brokerage free and join a community of 1.5+ crore investors and traders
         </p>
