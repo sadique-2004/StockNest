@@ -12,7 +12,7 @@ const LeftSection = ({
   buttonText = "Try Demo",
 }) => {
   return (
-    <section className="py-5 bg-white">
+    <section className="py-5 bg-white px-3 px-md-5">
       <div className="container">
         <div className="row align-items-center g-4 flex-column-reverse flex-md-row">
           {/* Image Section */}
