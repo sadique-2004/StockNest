@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.custom-primary {
+  color: #3B7CD3 !important;
+  font-weight: bold;
+}
+
+.btn-custom-primary {
+  background-color: #3B7CD3 !important;
+  color: #fff !important;
+  border: none;
+}
+
+.btn-custom-primary:hover {
+  background-color: #2f66b2 !important; /* darker shade on hover */
+  color: #fff !important;
+}
+
+
+
