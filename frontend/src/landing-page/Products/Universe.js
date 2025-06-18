@@ -64,8 +64,8 @@ const Universe = () => {
         ))}
       </div>
 
-      <div className="mt-5">
-        <button className="btn btn-custom-primary btn-lg w-25">Sign up for free</button>
+      <div className="mt-5 d-flex justify-content-center">
+        <button className="btn btn-custom-primary btn-lg px-4 px-md-5">Sign up for free</button>
       </div>
     </div>
   );

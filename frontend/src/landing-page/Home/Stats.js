@@ -3,84 +3,83 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 function Stats() {
   return (
-    <div className="container mt-5 px-5">
-      <div className="row mt-5  mx-5">
-        <div className="col-5">
-          <h2 className="mb-5">Trust with confidence</h2>
+    <div className="container mt-5 px-4">
+      <div className="row mt-5">
+        {/* Text Content */}
+        <div className="col-12 col-md-6 mb-4">
+          <h2 className="mb-4 text-center text-md-start">Trust with confidence</h2>
 
           <div className="mb-4">
-            <h3>Customer-first always</h3>
+            <h4>Customer-first always</h4>
             <p>
-              That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh
-              crores of equity investments and contribute to 15% of daily retail
-              exchange volumes in India.
+              That's why 1.6+ crore customers trust Zerodha with ~ ₹6 lakh crores of equity
+              investments and contribute to 15% of daily retail exchange volumes in India.
             </p>
           </div>
 
           <div className="mb-4">
-            <h3>No spam or gimmicks</h3>
+            <h4>No spam or gimmicks</h4>
             <p>
-              No gimmicks, spam, "gamification", or annoying push notifications.
-              High quality apps that you use at your pace, the way you like.{" "}
-              <a href="#" style={{ textDecoration: "none" }}>
+              No gimmicks, spam, "gamification", or annoying push notifications. High quality
+              apps that you use at your pace, the way you like.{" "}
+              <a href="#" className="text-decoration-none">
                 Our philosophies.
-              </a>{" "}
+              </a>
             </p>
           </div>
 
           <div className="mb-4">
-            <h3>The STOCK NEST universe</h3>
+            <h4>The STOCK NEST universe</h4>
             <p>
-              Not just an app, but a whole ecosystem. Our investments in 30+
-              fintech startups offer you tailored services specific to your
-              needs.
+              Not just an app, but a whole ecosystem. Our investments in 30+ fintech startups
+              offer you tailored services specific to your needs.
             </p>
           </div>
 
           <div className="mb-4">
-            <h3>Do better with money</h3>
+            <h4>Do better with money</h4>
             <p>
               With initiatives like{" "}
-              <a href="#" style={{ textDecoration: "none" }}>
+              <a href="#" className="text-decoration-none">
                 Nudge
               </a>{" "}
               and{" "}
-              <a href="#" style={{ textDecoration: "none" }}>
+              <a href="#" className="text-decoration-none">
                 Kill Switch
               </a>
-              , we don't just facilitate transactions, but actively help you do
-              better with your money.
+              , we don't just facilitate transactions, but actively help you do better with
+              your money.
             </p>
           </div>
         </div>
-        <div className="col-1"></div>
-        <div className="col-6">
+
+        {/* Image and Links */}
+        <div className="col-12 col-md-6 d-flex flex-column align-items-center">
           <img
             src="Media/Assets/ecosystem.png"
             alt="Stats"
-            // className="img-fluid"
-            style={{ width: "90%" }}
+            className="img-fluid mb-4"
+            style={{ maxWidth: "90%" }}
           />
 
-          <div
-            className=" mt-5 text-center"
-            style={{ fontSize: "1.2rem", margin: "auto" }}
-          >
-            <a href="#" className="text-decoration-none">
+          <div className="text-center mb-4" style={{ fontSize: "1.1rem" }}>
+            <a href="#" className="text-decoration-none d-block mb-2">
               Explore our products <IoIosArrowRoundForward />
             </a>
-            <a href="#" className="text-decoration-none mx-5">
+            <a href="#" className="text-decoration-none d-block">
               Try Kite demo <IoIosArrowRoundForward />
             </a>
           </div>
         </div>
-        <div className="col-12 mt-5 text-center">
-          <a href="#" className="text-decoration-none mt-5">
+
+        {/* Press Logos */}
+        <div className="col-12 text-center mt-4">
+          <a href="#" className="text-decoration-none">
             <img
               src="Media/Assets/pressLogos.png"
-              alt="Awards"
-              className="margin-auto"
-              style={{ width: "60%" }}
+              alt="Press Logos"
+              className="img-fluid"
+              style={{ maxWidth: "70%" }}
             />
           </a>
         </div>

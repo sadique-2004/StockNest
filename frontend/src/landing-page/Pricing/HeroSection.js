@@ -40,8 +40,8 @@ function HeroSection() {
   return (
     <div className="container">
       <div className="row p-5 border-bottom text-center mt-5">
-        <h1>Charges</h1>
-        <h3 className="text-muted fs-5">List of all charges and taxes</h3>
+        <h1 className="display-5 fw-bold mb-3" style={{ color: "#3B7CD3" }}>Charges</h1>
+        <h3 className="fs-5 text-muted mb-4">List of all charges and taxes</h3>
       </div>
     </div>
   );
