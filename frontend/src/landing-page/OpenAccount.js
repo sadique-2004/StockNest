@@ -1,4 +1,4 @@
-import React from "react";
+import { SignedIn, SignedOut, SignUpButton } from "@clerk/clerk-react";
 
 function OpenAcount() {
   return (
@@ -8,7 +8,28 @@ function OpenAcount() {
         Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O
         trades.
       </p>
-      <button className="btn btn-lg col-8 col-sm-6 col-md-4 col-lg-2 btn-custom-primary  text-center">Sign up for free</button>
+      <SignedIn>
+        <a
+          href="https://stock-nest-dashboard.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-lg col-8 col-sm-6 col-md-4 col-lg-2 btn-custom-primary text-center"
+          style={{ margin: "auto" }}
+        >
+          Start investing →
+        </a>
+      </SignedIn>
+
+      <SignedOut>
+        <SignUpButton mode="modal">
+          <button
+            className="btn btn-lg col-8 col-sm-6 col-md-4 col-lg-2 btn-custom-primary text-center"
+            style={{ margin: "auto" }}
+          >
+            Sign up for free
+          </button>
+        </SignUpButton>
+      </SignedOut>
     </div>
   );
 }

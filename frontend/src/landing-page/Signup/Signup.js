@@ -1,13 +1,23 @@
 import React from "react";
+import { SignUp } from "@clerk/clerk-react";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  UserButton,
+} from "@clerk/clerk-react";
 
 const Signup = () => {
   return (
     <div className="container mt-5 px-4 mb-5">
       <div className="text-center mb-5">
-        <h1 className="fw-bold display-6 " style={{ color: "#3B7CD3" }}>Open a free demat & trading account</h1>
-        
+        <h1 className="fw-bold display-6 " style={{ color: "#3B7CD3" }}>
+          Open a free demat & trading account
+        </h1>
+
         <p className="lead text-muted">
-          Start investing brokerage free and join a community of 1.5+ crore investors and traders
+          Start investing brokerage free and join a community of 1.5+ crore
+          investors and traders
         </p>
       </div>
 
@@ -28,7 +38,7 @@ const Signup = () => {
             <h3 className="fw-semibold mb-2 text-muted">Signup Now</h3>
             <p className="text-muted">Or track your existing application</p>
 
-            <form>
+            {/* <form>
               <div className="mb-3">
                 <label htmlFor="phone" className="form-label fw-semibold text-muted">
                   Phone Number
@@ -50,7 +60,28 @@ const Signup = () => {
                 <a href="#" className="text-decoration-none">Terms</a> &{" "}
                 <a href="#" className="text-decoration-none">Privacy Policy</a>.
               </p>
-            </form>
+            </form> */}
+
+            <SignedOut>
+              <SignInButton mode="modal" redirectUrl="/">
+                <button className="text-[#45ccb8] hover:text-white hover:bg-[#45ccb8] border border-[#45ccb8] rounded px-3 py-2 transition-all duration-200">
+                  Login
+                </button>
+              </SignInButton>
+            </SignedOut>
+
+            <SignedIn>
+              <div className="flex items-center space-x-2">
+                <UserButton
+                  appearance={{
+                    elements: {
+                      avatarBox: "h-8 w-8", // Size of avatar
+                    },
+                  }}
+                  afterSignOutUrl="/"
+                />
+              </div>
+            </SignedIn>
           </div>
         </div>
       </div>
