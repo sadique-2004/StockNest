@@ -1,4 +1,5 @@
-import { Schema } from "mongoose";
+
+const { Schema } = require('mongoose');
 
 
 const watchlistSchema = new Schema({
@@ -8,4 +9,4 @@ const watchlistSchema = new Schema({
     isDown: Boolean,
 })
 
-module.exports = watchlistSchema;
+module.exports = {watchlistSchema};
